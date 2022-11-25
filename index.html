@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MÁQUINA DE MEMES</title>
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="app">
+      <div class="logo">
+        <img src="./pictures/logo-dio.png" width="70" alt="Logo da DIO">
+      </div>
+      <div class="app-image" id="screenshotZone">
+        <textarea name="" class="text-box" placeholder="Digite seu meme" aria-multiline="true"></textarea>
+        <div id="display-image"></div>
+        <textarea name="" class="text-box" placeholder="Digite seu meme" aria-multiline="true"></textarea>
+      </div>
+      <div class="app-photo-picker">
+        <select id="meme-list">
+          <!-- <option value="default">example one</option> -->
+        </select>
+        <input
+          type="file"
+          name=""
+          id="image-input"
+          accept="image/jpeg, image/png, image/jpg"
+        >
+      </div>
+      <div class="download">
+        <button id="btn-download">DOWNLOAD</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./javascript/main.js"></script>
+  <script src="./javascript/html2canvas.min.js"></script>
+</body>
+</html>
